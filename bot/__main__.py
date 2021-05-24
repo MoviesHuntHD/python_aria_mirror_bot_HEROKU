@@ -44,8 +44,7 @@ def stats(update, context):
 @run_async
 def start(update, context):
     start_string = f'''
-Hi {update.message.chat.first_name}, This bot can mirror all your links to Google drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+Hi {update.message.chat.first_name}, Ye tere baap ka bot hai, Yaha se chala ja bsdk
 '''
     update.effective_message.reply_photo("https://telegra.ph/file/b9afd85872e6ba83063dc.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
 
@@ -54,7 +53,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 def repo(update, context):
     bot.send_message(update.message.chat_id,
     reply_to_message_id=update.message.message_id,
-    text="Repo: chal bhak bsdk", disable_web_page_preview=True)
+    text="Repo: chal bhak gandu", disable_web_page_preview=True)
 
 
 @run_async
