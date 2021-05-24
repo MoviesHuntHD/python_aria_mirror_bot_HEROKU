@@ -33,7 +33,7 @@ def stats(update, context):
             f'<b>Total disk space:</b> {total}\n' \
             f'<b>Used:</b> {used}  ' \
             f'<b>Free:</b> {free}\n\n' \
-            f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
+            f'Data Usage\n<b>Upload:</b> {sent}\n' \
             f'<b>Down:</b> {recv}\n\n' \
             f'<b>CPU:</b> {cpuUsage}%\n' \
             f'<b>RAM:</b> {memory}%\n' \
@@ -47,14 +47,14 @@ def start(update, context):
 Hi {update.message.chat.first_name}, This bot can mirror all your links to Google drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/511f10824f13e639703e1.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_photo("https://telegra.ph/file/b9afd85872e6ba83063dc.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
 
 
 @run_async
 def repo(update, context):
     bot.send_message(update.message.chat_id,
     reply_to_message_id=update.message.message_id,
-    text="Repo: https://github.com/breakdowns/slam-mirrorbot", disable_web_page_preview=True)
+    text="Repo: chal bhak bsdk", disable_web_page_preview=True)
 
 
 @run_async
