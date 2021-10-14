@@ -12,9 +12,6 @@ RUN apt-get -qq update && \
     apt-get purge -y software-properties-common
 
 COPY requirements.txt .
-COPY gdtot /usr/local/bin
-RUN chmod +x /usr/local/bin/gdtot && \
-echo '{"url":"https://new.gdtot.org/","cookie":"_ga=GA1.2.1795196776.1634145008; crypt=a2FrY29sTWVhc1hlNmZaNHY5ZTZRcGFpcmpaRC9HaGdvV0VDQzBNTTFFUT0%3D; _gid=GA1.2.847202292.1634145008; PHPSESSID=eej7uc09h4mirrpf5thuacq4qd; _gat_gtag_UA_130203604_4=1; prefetchAd_3621940=true"}' > cookies.txt
 COPY extract /usr/local/bin
 COPY pextract /usr/local/bin
 RUN chmod +x /usr/local/bin/extract && chmod +x /usr/local/bin/pextract
